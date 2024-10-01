@@ -1,0 +1,3 @@
+apiKey = "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"
+apikey2 = "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"
+WeatherAPI = "d8fe02bc97779230b767f8be325baeb3"
