@@ -74,7 +74,7 @@ class YoloWithWebcam:
                 # Get the class name
                 cls = int(box.cls[0])
                 cvzone.putTextRect(img, f"{self.classNames[cls]} {conf / 100}", (max(0, x1), max(35, y1)))
-        return img
+        return img 
     
 def main():
     yolo_webcam = YoloWithWebcam()

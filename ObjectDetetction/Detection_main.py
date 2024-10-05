@@ -14,7 +14,8 @@ def main():
 
         # Perform posture detection
         frame2, results = detector.detect_posture(frame)
-
+        postion_of_body_parts = detector.get_body_part_positions(results)
+        print(postion_of_body_parts)
         # Perform object detection
         frame3 = yolo_webcam.detect_objects(frame2)  # Use detect_objects method
 

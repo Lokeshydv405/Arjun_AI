@@ -51,6 +51,13 @@ body{
     transform: 0.5s;
     animation: animate3 8s linear infinite; 
 }
+
+.askme{
+    color: white;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
 @keyframes animate1{
     0%{
         transform: rotate(0deg);

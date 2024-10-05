@@ -4,8 +4,9 @@ from config import apikey2
 chatStr = ''
 
 def chat(query):
+    query = query.lower()
     global chatStr
-    newChat = f"Master : {query} \nJarvis : "
+    newChat = f"Master : {query} \nArjun:"
     text = ""  # Initialize text as an empty string
 
     client = Groq(api_key=apikey2)
@@ -30,7 +31,7 @@ def chat(query):
             text += chunk.choices[0].delta.content  # Concatenate the text
 
     # Remove "Jarvis:" from the response
-    response_text = text.replace("Jarvis: ", "").strip()
+    response_text = text.replace("Arjun:", "").strip()
     
     newChat += response_text + "\n"  # Append the cleaned response to chatStr
     chatStr += newChat

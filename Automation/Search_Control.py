@@ -66,6 +66,6 @@ def handle_query(query):
     return True
 
 # # Example usage
-# if __name__ == "__main__":
-#     query = "I want to listen to music"  # This would come from the user's input
-#     handle_query(query)
+if __name__ == "__main__":
+    query = "I want to listen to music"  # This would come from the user's input
+    handle_query(query)

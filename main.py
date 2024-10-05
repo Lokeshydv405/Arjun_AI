@@ -3,20 +3,33 @@ import webbrowser
 import datetime
 from pytube import Search
 from Chatting.Chat import chat
-from Navigation.Open_applications import Open_Apps, Open_websites
+from Automation.Open_applications import Open_Apps, Open_websites
 from Basic_Utilization.AI_Prompts import ai
 from Basic_Utilization.Say import say        
-from Basic_Utilization.On_Start import greeting,Exit,handle_query_wt
+from Basic_Utilization.On_Start import greet,Exit,handle_query_wt
 from Basic_Utilization.TakeCommand import takecommand
-from Navigation.Music_Control import handle_query
-
+from Automation.Search_Control import handle_query
+from Automation.Youtube_automation import command_handler
 def main():
-    print("Jarvis is online now")
-    greeting()            
-
+    print("Arjun is online now")
+    greet()            
+    youtube_mode = 0
     while True:
         query = takecommand()
         if query is None:
+            continue
+        if 'enter youtube' in query.lower():
+            say("Entering YouTube mode")
+            youtube_mode = 1
+            continue
+        
+        if 'exit youtube' in query.lower():
+            say("Exiting YouTube mode")
+            youtube_mode = 0
+            continue
+        
+        if youtube_mode:
+            command_handler(query)
             continue
 
         # Check for application or website commands
@@ -26,12 +39,10 @@ def main():
         
         response = Open_websites(query)
         if response:
-            say(response)
             continue
 
         response = Open_Apps(query)
         if response:
-            say(response)
             continue
 
         response = handle_query(query)
@@ -51,7 +62,6 @@ def main():
         
         Exit_response = Exit(query)
         if Exit_response:
-            say("Good Bye sir, It was my please to assist you ")
             break
 
         # Default response
