@@ -2,7 +2,7 @@ import speech_recognition as sr
 from Basic_Utilization.Say import say
 
 from mtranslate import translate
-
+ 
 def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:

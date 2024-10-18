@@ -1,0 +1,108 @@
+Questions for AI: Create a detailed, personalized 7-day diet plan based on the following user profile and preferences:
+
+### User Profile:
+- **Age**: 20
+- **Gender**: Male
+- **Weight**: 65 kg
+- **Height**: 175 cm
+- **Fitness Goal**: Weight gain
+- **Medical Conditions**: High Blood Pressure
+- **Dietary Restrictions**: Low sugar
+- **Budget**: Medium
+
+### Diet Preferences:
+- **Preferred Food Category**: Vegetarian
+- **Preferred Cuisine**: North Indian
+- **Foods to Include**: 
+- **Foods to Avoid**: Sugary snacks, Processed foods, Oily snacks
+- **Number of Meals**: 3 meals and 2 snacks per day
+- **Specific Ingredients**: Likes: Soya beans, Dislikes: Coriander
+
+### Other Preferences:
+- **Cooking Time**: Quick meals
+- **Activity Level**: Moderate, exercises 3 times a week
+
+### Output Instructions:
+- Provide a day-by-day breakdown for 7 days, including breakfast, lunch, dinner, and snacks.
+- Each meal should include a dish with its Hindi name in brackets.
+- List estimated calorie counts for each meal.
+- Suggest ingredient substitutions if needed to align with dietary restrictions and budget constraints.
+- Summarize the overall calorie count and highlight any nutritional notes relevant to diabetes.
+
+ 
+--------------------Based on your profile and preferences, I've created a 7-day diet plan that caters to your vegetarian North Indian preferences, while incorporating soya beans and avoiding sugary snacks, processed foods, and oily snacks. Since you have high blood pressure, I've also included ingredients that can help lower blood pressure. Given your moderate activity level and exercises three times a week, I've calculated the calorie intake to support your weight gain goal.
+
+**Day 1:**
+
+* Breakfast: **Soya Chunks Poha** (250 calories) [Soya chunks cooked with puffed rice]
+* Lunch: **Vegetable Biryani** (400 calories) [Mixed vegetables cooked with basmati rice and a hint of cumin]
+* Snack 1: **Makhana Ki Chaat** (150 calories) [Roasted fox nuts seasoned with spices]
+* Dinner: **Palak Paneer** (350 calories) [Spinach curry with paneer and a touch of garlic]
+* Snack 2: **Fresh Fruit Salad** (100 calories) [A mix of seasonal fruits like apples, bananas, and grapes]
+
+**Day 2:**
+
+* Breakfast: **Tofu Scrambled with Spinach** (250 calories) [Tofu scrambled with spinach, onions, and a pinch of salt]
+* Lunch: **Chana Masala** (400 calories) [Chickpeas cooked in a flavorful tomato-based curry]
+* Snack 1: **Carrot and Raisin Muffins** (150 calories) [Homemade muffins made with whole wheat flour, carrots, and raisins]
+* Dinner: **Mattar Mushroom Curry** (350 calories) [Mixed vegetables and mushrooms cooked in a creamy tomato sauce]
+* Snack 2: **Almonds and Dried Apricots** (100 calories) [A mix of unsalted almonds and dried apricots]
+
+**Day 3:**
+
+* Breakfast: **Soya Granola** (250 calories) [Soya-based granola with a hint of cinnamon]
+* Lunch: **Vegetable Korma** (4it 2
+00 calories) [Mixed vegetables cooked in a creamy coconut-based curry]
+* Snack 1: **Cucumber and Tomato Raita** (150 calories) [Yogurt-based side dish with cucumber, tomato, and a pinch of cumin]
+* Dinner: **Gobhi Aloo** (350 calories) [Cauliflower and potato curry with a hint of garlic]
+* Snack 2: **Dark Chocolate Chip Oat Cookies** (100 calories) [Homemade cookies made with rolled oats, dark chocolate chips, and a hint of vanilla]
+
+**Day 4:**
+
+* Breakfast: **Soya Chunks Idli** (250 calories) [Soya chunks cooked with idli batter and steamed]
+* Lunch: **Vegetable Jalfrezi** (400 calories) [Mixed vegetables cooked in a spicy tomato-based curry]
+* Snack 1: **Banana and Peanut Butter Smoothie** (150 calories) [A blend of banana, peanut butter, and soy milk]
+* Dinner: **Palak Tofu** (350 calories) [Tofu cooked in a spinach-based curry with a hint of garlic]
+* Snack 2: **Cottage Cheese and Fresh Fruits** (100 calories) [A mix of cottage cheese and fresh fruits like strawberries and kiwi]
+
+**Day 5:**
+
+* Breakfast: **Soya Granola Parfait** (250 calories) [Layered granola with soy yogurt, fresh fruits, and a hint of honey]
+* Lunch: **Vegetable Biryani** (400 calories) [Mixed vegetables cooked with basmati rice and a hint of cumin]
+* Snack 1: **Carrot and Ginger Juice** (150 calories) [A blend of carrot, ginger, and soy milk]
+* Dinner: **Mattar Paneer** (350 calories) [Mixed vegetables and paneer cooked in a creamy tomato sauce]
+* Snack 2: **Almonds and Dried Cranberries** (100 calories) [A mix of unsalted almonds and dried cranberries]
+
+**Day 6:**
+
+* Breakfast: **Tofu Scrambled with Spinach** (250 calories) [Tofu scrambled with spinach, onions, and a pinch of salt]
+* Lunch: **Chana Masala** (400 calories) [Chickpeas cooked in a flavorful tomato-based curry]
+* Snack 1: **Cucumber and Tomato Salad** (150 calories) [A mix of cucumber, tomato, and a hint of cumin]
+* Dinner: **Gobhi Aloo** (350 calories) [Cauliflower and potato curry with a hint of garlic]
+* Snack 2: **Dark Chocolate Chip Oat Cookies** (100 calories) [Homemade cookies made with rolled oats, dark chocolate chips, and a hint of vanilla]
+
+**Day 7:**
+
+* Breakfast: **Soya Chunks Poha** (250 calories) [Soya chunks cooked with puffed rice]
+* Lunch: **Vegetable Korma** (400 calories) [Mixed vegetables cooked in a creamy coconut-based curry]
+* Snack 1: **Banana and Peanut Butter Smoothie** (150 calories) [A blend of banana, peanut butter, and soy milk]
+* Dinner: **Palak Tofu** (350 calories) [Tofu cooked in a spinach-based curry with a hint of garlic]
+* Snack 2: **Fresh Fruit Salad** (100 calories) [A mix of seasonal fruits like apples, bananas, and grapes]
+
+**Total Daily Calorie Intake:** 1700-1800 calories
+
+**Nutritional Notes:**
+
+* This diet plan focuses on whole foods, fiber-rich ingredients, and lean protein sources to support weight gain and manage blood pressure.
+* The inclusion of soya beans and tofu provides a plant-based source of protein.
+* The addition of nuts and seeds like almonds, cashews, and pumpkin seeds provides healthy fats and crunch.
+* Dark chocolate with at least 70% cocoa content is included in moderation to satisfy sweet cravings while maintaining a low sugar intake.
+
+**Ingredient Substitutions:**
+
+* Replace refined sugar with natural sweeteners like honey, maple syrup, or dates.
+* Choose whole wheat flour over all-purpose flour for baked goods.
+* Select low-fat or reduced-fat dairy products to lower saturated fat intake.
+* Opt for low-sodium options when available to manage blood pressure.
+
+Remember to stay hydrated by drinking plenty of water throughout the day. Also, consult with your doctor or a registered dietitian before making any significant changes to your diet.

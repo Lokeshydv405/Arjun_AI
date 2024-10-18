@@ -1,0 +1,114 @@
+Questions for AI: Create a personalized diet plan for a week based on the following user profile and preferences(also write hindi for each , in english only):
+
+### User Profile:
+- **Age**: 30
+- **Gender**: Male
+- **Weight**: 80 kg
+- **Height**: 175 cm
+- **Fitness Goal**: Weight loss
+- **Medical Conditions**: Diabetes
+- **Dietary Restrictions**: Low sugar
+- **Budget**: Low
+
+### Diet Preferences:
+- **Preferred Cuisine**: North Indian
+- **Foods to Include**: Whole grains, Lentils, Vegetables
+- **Foods to Avoid**: Sugary snacks, Processed foods
+- **Number of Meals**: 3 meals and 2 snacks per day
+- **Specific Ingredients**: Likes: Chickpeas, Dislikes: Spinach
+
+### Other Preferences:
+- **Cooking Time**: Quick meals
+- **Activity Level**: Moderate, exercises 3 times a week
+
+### Additional Instructions:
+- Provide a daily meal plan including breakfast, lunch, dinner, and snacks.
+- Ensure meals are balanced and meet the dietary restrictions and budget considerations.
+- Include estimated calorie counts for each meal and suggestions for ingredient substitutions if needed.
+     
+--------------------**Personalized Diet Plan for [Username]**
+
+**Mon**
+
+* Breakfast: Whole wheat chapati with chickpea masala (250 calories) - A north Indian-inspired dish made with whole wheat flour, chickpeas, and spices, served with a glass of water (0 calories)
+* Lunch: Brown rice with mixed vegetable pulao (400 calories) - A flavorful and healthy pulao made with brown rice, mixed vegetables, and herbs, served with a side of raita (200 calories)
+* Dinner: Lentil soup with whole wheat naan (400 calories) - A comforting and nutritious soup made with lentils, onions, and spices, served with a side of whole wheat naan (150 calories)
+* Snack 1: Cucumber and carrot sticks with hummus (100 calories)
+* Snack 2: Oat cookies (150 calories) - A homemade cookie made with rolled oats, nuts, and minimal sugar, perfect for a quick snack
+
+**Total Calories:** 1500
+
+**Tue**
+
+* Breakfast: Omelette with whole wheat toast and a glass of milk (250 calories)
+* Lunch: Brown rice with roasted vegetables and a dollop of yogurt (400 calories)
+* Dinner: Chicken tikka masala with brown rice and mixed vegetables (500 calories)
+* Snack 1: Bell pepper slices with guacamole (100 calories)
+* Snack 2: Banana (90 calories)
+
+**Total Calories:** 1440
+
+**Wed**
+
+* Breakfast: Whole wheat poha with a glass of orange juice (200 calories)
+* Lunch: Lentil and vegetable curry with brown rice (500 calories)
+* Dinner: Baked chicken breast with roasted broccoli and quinoa (400 calories)
+* Snack 1: Cucumber slices with dill dip (100 calories)
+* Snack 2: Unsweetened tea (0 calories)
+
+**Total Calories:** 1400
+
+**Thu**
+
+* Breakfast: Overnight oats with whole wheat cereal (250 calories)
+* Lunch: Whole wheat sandwich with chicken and mixed vegetables (400 calories)
+* Dinner: Vegetable biryani with a side of raita (500 calories)
+* Snack 1: Grapes (80 calories)
+* Snack 2: Whole wheat crackers with a glass of milk (120 calories)
+
+**Total Calories:** 1450
+
+**Fri**
+
+* Breakfast: Whole wheat paratha with a glass of carrot juice (250 calories)
+* Lunch: Mixed vegetable and chickpea salad with whole wheat crackers (400 calories)
+* Dinner: Grilled chicken breast with roasted sweet potatoes and brown rice (500 calories)
+* Snack 1: Cilantro chutney with whole wheat crackers (100 calories)
+* Snack 2: Banana (90 calories)
+
+**Total Calories:** 1440
+
+**Sat**
+
+* Breakfast: Scrambled eggs with whole wheat toast and a glass of water (200 calories)
+* Lunch: Chicken and vegetable soup with a side of whole wheat naan (400 calories)
+* Dinner: Brown rice with mixed vegetables and a dollop of yogurt (400 calories)
+* Snack 1: Whole wheat cookies (120 calories)
+* Snack 2: Unsweetened tea (0 calories)
+
+**Total Calories:** 1320
+
+**Sun**
+
+* Breakfast: Whole wheat dosa with a glass of lime juice (250 calories)
+* Lunch: Mixed vegetable and lentil curry with brown rice (500 calories)
+* Dinner: Baked chicken breast with roasted carrots and brown rice (400 calories)
+* Snack 1: Cucumber slices with hummus (100 calories)
+* Snack 2: Whole wheat crackers with a glass of milk (120 calories)
+
+**Total Calories:** 1470
+
+**Estimated Daily Caloric Intake:** 1400-1500
+
+**Tips and Variations:**
+
+* For an extra kick, add a pinch of cumin powder to your meals.
+* Swap brown rice with quinoa or whole wheat pasta for a change.
+* Experiment with different spices and herbs to add flavor to your meals.
+* Incorporate more protein-rich ingredients like lentils and chickpeas to keep you full.
+* If you prefer a lighter breakfast, try a half-boiled egg or a slice of whole wheat toast with avocado.
+
+**Special Instructions:**
+
+* To manage your diabetes, it's essential to control your sugar intake. Avoid sugary snacks and drinks, and opt for natural sweeteners like dates or honey.
+* With a low budget, prioritize whole grains, lentils, and vegetables, which are affordable and nutritious.

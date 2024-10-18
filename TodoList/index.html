@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task List</title>
+    <style>
+        /* Styling for layout */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        .container { width: 80%; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1 { text-align: center; color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .btn { margin-right: 5px; padding: 5px 10px; }
+        .btn.complete { background-color: #4CAF50; color: white; }
+        .btn.update { background-color: #008CBA; color: white; }
+        .btn.delete { background-color: #f44336; color: white; }
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; }
+        .form-group input, .form-group select { width: 100%; padding: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task List</h1>
+        <div>
+            <h2>Add New Task</h2>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter task description">
+            </div>
+            <div class="form-group">
+                <label for="due_date">Due Date</label>
+                <input type="date" id="due_date">
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <table id="tasksTable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Completed</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Fetch and display tasks
+        function loadTasks() {
+    // Fetch the list of tasks from the server
+    fetch('http://127.0.0.1:5000/tasks', {
+        method: 'GET' // Explicitly define the HTTP method
+    })
+    .then(response => response.json())  // Parse the JSON data from the response
+    .then(data => {
+        console.log(data);
+        // Select the table body where the tasks will be displayed
+        const tbody = document.querySelector('#tasksTable tbody');
+        tbody.innerHTML = ''; // Clear existing rows to prevent duplication
+
+        // Loop over each task and create a table row for it
+        data.forEach(task => {
+            // Create a new row element
+            const row = document.createElement('tr');
+            // Define the inner HTML of the row with task details and action buttons
+            row.innerHTML = `
+                <td>${task.description}</td>
+                <td>${task.due_date}</td>
+                <td>${task.priority}</td>
+                <td>${task.completed ? 'Yes' : 'No'}</td>
+                <td>${task.created_at}</td>
+                <td>
+                    <button class="btn complete" onclick="completeTask('${task._id}')">Complete</button>
+                    <button class="btn update" onclick="updateTask('${task._id}')">Update</button>
+                    <button class="btn delete" onclick="deleteTask('${task._id}')">Delete</button>
+                </td>
+            `;
+            // Append the new row to the table body
+            tbody.appendChild(row);
+        });
+    })
+    .catch(error => console.error('Error loading tasks:', error)); // Handle any errors
+}
+
+
+        // Add a new task
+        function addTask() {
+            const description = document.getElementById('description').value;
+            const due_date = document.getElementById('due_date').value;
+            const priority = document.getElementById('priority').value;
+
+            fetch('http://127.0.0.1:5000/tasks/addTask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ description, due_date, priority })
+            })
+            .then(response => response.json())
+            .then(() => {
+                loadTasks(); // Refresh tasks
+                // Clear form inputs
+                document.getElementById('description').value = '';
+                document.getElementById('due_date').value = '';
+                document.getElementById('priority').value = 'Normal';
+            });
+        }
+
+        // Mark task as completed
+        function completeTask(taskId) {
+            fetch(`http://127.0.0.1:5000/tasks/${taskId}/complete`, { method: 'PUT' })
+                .then(response => response.json())
+                .then(() => loadTasks()); // Refresh tasks
+        }
+
+        // Update task details (this example only updates the priority for simplicity)
+        function updateTask(taskId) {
+            const newPriority = prompt("Enter new priority (Normal, High, Low):", "Normal");
+            if (newPriority) {
+                fetch(`/tasks/${taskId}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ priority: newPriority })
+                })
+                .then(response => response.json())
+                .then(() => loadTasks()); // Refresh tasks
+            }
+        }
+
+        // Delete a task
+        function deleteTask(taskId) {
+            fetch(`http://127.0.0.1:5000/tasks/${taskId}`, { method: 'DELETE' })
+                .then(response => response.json())
+                .then(() => loadTasks()); // Refresh tasks
+        }
+
+        // Load tasks initially
+        loadTasks();
+    </script>
+</body>
+</html>

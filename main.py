@@ -10,12 +10,16 @@ from Basic_Utilization.On_Start import greet,Exit,handle_query_wt
 from Basic_Utilization.TakeCommand import takecommand
 from Automation.Search_Control import handle_query
 from Automation.Youtube_automation import command_handler
+from TodoList.Task_functions import ToDOmain
 def main():
     print("Arjun is online now")
     greet()            
     youtube_mode = 0
     while True:
         query = takecommand()
+        Exit_response = Exit(query)
+        if Exit_response:
+            break
         if query is None:
             continue
         if 'enter youtube' in query.lower():
@@ -60,10 +64,14 @@ def main():
             ai(query)
             continue
         
-        Exit_response = Exit(query)
-        if Exit_response:
-            break
 
+        # ToDoList Related Commands
+        ToDOList_ress = ToDOmain(query)
+        print(ToDOList_ress)
+        if ToDOList_ress:
+            print("-"*30)
+            continue
+        
         # Default response
         response = chat(query)
         say(response)

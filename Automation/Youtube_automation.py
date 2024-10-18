@@ -111,52 +111,53 @@ def command_handler(command):
     if "search" in command:
         search_text = command.replace("search", "").strip()
         youtube_search(search_text)
-    elif "play" in command:
-        play_music_on_youtube(command.replace("play", "").strip())
-    elif command == "play video":
+    # elif "play" in command:
+    #     play_music_on_youtube(command.replace("play", "").strip())
+    if "play" in command and "video" in command:
         play_pause('play')
-    elif command == "pause video":
+    elif "pause" in command and "video" in command:
         play_pause('pause')
-    elif command == "mute":
+    elif "mute" in command:
         mute_unmute()
-    elif command == "stop video":
+    elif "stop" in command and "video" in command:
         stop_video()
-    elif command == "next video":
+    elif "next" in command and "video" in command:
         next_video()
-    elif command == "previous video":
+    elif "previous" in command and "video" in command:
         previous_video()
-    elif command == "seek backward a bit":
+    elif "seek" in command and "backward" in command and "bit" in command:
         seek_backward_5()
-    elif command == "seek forward a bit":
+    elif "seek" in command and "forward" in command and "bit" in command:
         seek_forward_5()
-    elif command == "seek backward":
+    elif "seek" in command and "backward" in command:
         seek_backward_10()
-    elif command == "seek forward":
+    elif "seek" in command and "forward" in command:
         seek_forward_10()
-    elif command == "increase volume":
+    elif "increase" in command and "volume" in command:
         increase_volume()
-    elif command == "decrease volume":
+    elif "decrease" in command and "volume" in command:
         decrease_volume()
-    elif command == "fullscreen":
+    elif "fullscreen" in command:
         toggle_fullscreen()
-    elif command == "toggle captions":
+    elif "toggle" in command and "captions" in command:
         toggle_captions()
-    elif command == "miniplayer":
+    elif "miniplayer" in command:
         open_miniplayer()
-    elif command == "skip next frame":
+    elif "skip" in command and "next" in command and "frame" in command:
         skip_next_frame()
-    elif command == "skip previous frame":
+    elif "skip" in command and "previous" in command and "frame" in command:
         skip_previous_frame()
-    elif command == "increase speed":
+    elif "increase" in command and "speed" in command:
         speed_up()
-    elif command == "reduce speed":
+    elif "reduce" in command and "speed" in command:
         slow_down()
-    elif command == "go to start":
+    elif "go" in command and "start" in command:
         seek_to_start()
-    elif command == "go to end":
+    elif "go" in command and "end" in command:
         seek_to_end()
     else:
         print("Command not recognized.")
+
 
 # Main Loop
 if __name__ == "__main__":
